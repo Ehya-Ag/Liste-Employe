@@ -2,8 +2,8 @@
   <div class="liste-employes">
     <h2>Liste des employés</h2>
     <ol class="elements-employes">
-      <li class="employe" v-for="employe in employes" :key="employe.nom">
-        {{ employe.nom }} - {{ employe.poste }}
+      <li class="employe" v-for="(employe, index) in employes" :key="employe.nom">
+        {{ index + 1 }}. {{ employe.nom }} - {{ employe.poste }}
       </li>
     </ol>
   </div>
